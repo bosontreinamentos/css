@@ -1,0 +1,35 @@
+* {
+    color: black;
+    text-align: left;
+}
+
+/* Remover marcadores, margem e padding da lista: */
+ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+
+  li {
+    border-bottom: 1px solid #555;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Muda a cor do link ao passar o mouse */
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }

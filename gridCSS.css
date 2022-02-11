@@ -1,0 +1,31 @@
+/* Regra Universal */
+* {
+    color: black;
+    text-align: left;
+}
+
+/* Regras para o contêiner do Grid */
+.conteiner-grid {
+    display: grid;
+    background-color: aqua;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 'ace ace ace';
+}
+
+/* Regras para os itens do Grid */
+.item-grid {
+    background-color: coral;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Regra de "mesclagem" de um item do Grid */
+#item1, #item9 {
+    grid-column: 1/4;
+}
+
+
+

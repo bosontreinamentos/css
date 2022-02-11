@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Drop-Downs em CSS</title>
+    <meta charset="utf-8">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .conteudo-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .conteudo-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Elemento com Dropdown em CSS</h3>
+    <div class="dropdown">
+        <span>Passe o mouse aqui</span>
+        <div class="conteudo-dropdown">
+            <a href="http://www.bosontreinamentos.com.br">Bóson Treinamentos</a>
+            <a href="https://www.diariodonaturalista.com.br">Diário do Naturalista</a>
+            <a href="https://www.youtube.com/bosontreinamentos">Canal do Youtube</a>
+        </div>
+    </div>
+    <div>
+        <p>Na sequência, estudaremos menus usando dropdown</p>
+    </div>
+</body>
+
+</html>

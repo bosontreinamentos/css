@@ -1,0 +1,36 @@
+/* Regra Universal */
+* {
+    color: black;
+    text-align: left;
+}
+
+/* Regras para o contêiner do Grid */
+#conteiner-grid {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'cab cab'
+                         'nav pri'
+                         'rod rod';
+    grid-template-rows: 50px auto 30px;
+    grid-template-columns: 100px auto;
+}
+
+#conteiner-grid > header {
+    grid-area: cab;
+    background-color: #8cffa0;
+}
+
+#conteiner-grid > nav {
+    grid-area: nav;
+    background-color: #ffff64;
+}
+
+#conteiner-grid > main {
+    grid-area: pri;
+    background-color: #ffa08c;
+}
+
+#conteiner-grid > footer {
+    grid-area: rod;
+    background-color: #8ca0ff;
+}

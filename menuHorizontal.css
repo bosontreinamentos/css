@@ -1,0 +1,41 @@
+/* Regra Universal */
+* {
+    color: black;
+    text-align: left;
+}
+
+ul { 
+    /* Remover marcadores, margem e padding da lista: */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    /* Posicionar menu no início da página */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+
+  li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: darkred;
+  }
+  
+  /* Muda a cor do link ao passar o mouse */
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
