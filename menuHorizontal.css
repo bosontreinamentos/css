@@ -1,28 +1,22 @@
-/* Regra Universal */
-* {
-    color: black;
-    text-align: left;
-}
-
-ul { 
+nav > ul { 
     /* Remover marcadores, margem e padding da lista: */
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: lightcyan;
     /* Posicionar menu no início da página */
     position: fixed;
     top: 0;
     width: 100%;
   }
 
-  li {
+  .nav li {
     float: left;
-    border-right: 1px solid #bbb;
+    border-right: 1px solid grey;
   }
 
-  li a {
+  .nav li a {
     display: block;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,11 +25,16 @@ ul {
   }
   
   /* Muda a cor do link ao passar o mouse */
-  li a:hover {
-    background-color: #555;
+  .nav li a:hover {
+    background-color: lightseagreen;
     color: white;
   }
 
-  li:last-child {
+  .nav li:last-child {
     border-right: none;
+  }
+
+  main {
+      position: fixed;
+      top: 50px;
   }

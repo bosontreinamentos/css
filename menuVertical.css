@@ -1,35 +1,31 @@
-* {
-    color: black;
-    text-align: left;
-}
-
 /* Remover marcadores, margem e padding da lista: */
-ul { 
+nav > ul { 
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: lightcyan;
   }
 
-  li {
-    border-bottom: 1px solid #555;
+  .nav li {
+    border-bottom: 1px solid grey;
   }
 
-  li a {
+  .nav li a {
     display: block;
-    color: #000;
+    color: black;
     padding: 8px 16px;
     text-decoration: none;
     text-align: center;
   }
   
   /* Muda a cor do link ao passar o mouse */
-  li a:hover {
+  .nav li a:hover {
     background-color: #555;
     color: white;
   }
 
-  li:last-child {
+  .nav li:last-child {
     border-bottom: none;
   }
+
